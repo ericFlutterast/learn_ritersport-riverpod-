@@ -24,15 +24,18 @@ class HomeScreen extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
           ),
-          const Align(
-            alignment: Alignment.topLeft,
-            child: Text(
-              'Content:',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
+          const Padding(
+            padding: EdgeInsets.only(left: 8),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'Content:',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
           ),
