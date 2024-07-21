@@ -13,6 +13,7 @@ class DataRepository implements IDataRepository {
   Future<List<ItemModel>> fetchItems() async {
     final response = await _fakeDataSours.getItemsModelsJson();
     final data = (response as List).map((element) => ItemModel.fromJson(element)).toList();
+    await Future.delayed(const Duration(seconds: 2));
     return data;
   }
 }

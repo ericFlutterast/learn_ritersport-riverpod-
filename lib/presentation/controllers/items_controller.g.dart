@@ -6,21 +6,21 @@ part of 'items_controller.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$itemsControllerHash() => r'c024b7454fec44aa8cf2cbd6865c149e5840bd3d';
+String _$fetchItemModelsHash() => r'54ab209abae3519d8dc7a3e68908420bf1e62d5f';
 
-/// See also [ItemsController].
-@ProviderFor(ItemsController)
-final itemsControllerProvider =
-    AutoDisposeNotifierProvider<ItemsController, Object?>.internal(
-  ItemsController.new,
-  name: r'itemsControllerProvider',
+/// See also [fetchItemModels].
+@ProviderFor(fetchItemModels)
+final fetchItemModelsProvider =
+    AutoDisposeFutureProvider<List<ItemModel>>.internal(
+  fetchItemModels,
+  name: r'fetchItemModelsProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$itemsControllerHash,
+      : _$fetchItemModelsHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$ItemsController = AutoDisposeNotifier<Object?>;
+typedef FetchItemModelsRef = AutoDisposeFutureProviderRef<List<ItemModel>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
